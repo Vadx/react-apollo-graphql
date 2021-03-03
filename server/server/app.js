@@ -6,14 +6,9 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 3005;
 
-const uri = "mongodb+srv://test-user:Qcv3feXFFhrk5bvB@cluster0.bkwjw.mongodb.net/graphql_db?retryWrites=true&w=majority";
+const uri = "mongodb+srv://test-user:Qcv3feXFFhrk5bvB@cluster0.bkwjw.mongodb.net/graphql_db?retryWrites=true&w=majority?authSource=admin";
 
-// mongoose.connect('mongodb+srv://test-user:Qcv3feXFFhrk5bvB@cluster0.bkwjw.mongodb.net/graphql_db?retryWrites=true&w=majority');
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-
-// test-user
-// Qcv3feXFFhrk5bvB
-//mongodb+srv://vadx:<password>@cluster0.bkwjw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 app.use('/graphql', graphqlHTTP({
   schema,
