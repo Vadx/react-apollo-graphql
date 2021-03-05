@@ -1,7 +1,7 @@
 export const styles = theme => ({
   searchRoot: {
-    marginBottom: 3,
-    minHeight: 6,
+    marginBottom: 6,
+    minHeight: 10,
     display: 'flex',
   },
   root: {

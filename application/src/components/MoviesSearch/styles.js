@@ -2,9 +2,10 @@ export const styles = theme => ({
   search: {
     position: 'relative',
     width: '100%',
+    marginBottom: 4,
   },
   searchIcon: {
-    width: 9,
+    width: 10,
     height: '100%',
     position: 'absolute',
     pointerEvents: 'none',
@@ -17,9 +18,9 @@ export const styles = theme => ({
     width: '100%',
   },
   inputInput: {
-    paddingTop: 2,
-    paddingRight: 2,
-    paddingBottom:2,
-    paddingLeft: 10,
+    paddingTop: 4,
+    paddingRight: 4,
+    paddingBottom: 4,
+    paddingLeft: 4,
   },
 });

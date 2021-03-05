@@ -1,6 +1,6 @@
 export const styles = theme => ({
   container: {
-    padding: 2,
+    padding: 4,
   },
   title: {
     paddingBottom: 0,
@@ -13,7 +13,7 @@ export const styles = theme => ({
     minWidth: 120,
   },
   wrapper: {
-    marginTop: 2,
+    marginTop: 4,
     display: 'flex',
     justifyContent: 'flex-end',
   },
