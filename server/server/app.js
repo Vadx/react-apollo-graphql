@@ -2,11 +2,14 @@ const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('../schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3005;
 
 const uri = "mongodb+srv://test-user:Qcv3feXFFhrk5bvB@cluster0.bkwjw.mongodb.net/graphql_db?retryWrites=true&w=majority?authSource=admin";
+
+app.use(cors());
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
